@@ -1,0 +1,61 @@
+/* Mixins */
+
+/* Media Queries */
+
+@mixin from($size) {
+    @media (min-width: #{$size}) {
+        @content;
+    }
+}
+
+@mixin before-basic() {
+    &::before {
+        content: '';
+        position: absolute;
+        @content;
+    }
+}
+
+@mixin center-total() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin after-basic() {
+    &::before {
+        content: '';
+        position: absolute;
+        @content;
+    }
+}
+
+/* Fontfaces */
+
+@mixin newFont($fontFamily, $fileName, $weight: normal, $style: normal) {
+    $path: 'assets/fonts/' + $fileName + '/' + $fileName;
+    @font-face {
+        font-family: $fontFamily;
+        src: url($path +'.eot');
+        src: url($path +'.eot?#iefix') format('embedded-opentype'),
+             url($path +'.woff') format('woff'),
+             url($path +'.ttf') format('truetype'),
+             url($path +'.svg') format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+/* Support only edge */
+@mixin onlyMSEdge() {
+    @supports (-ms-ime-align:auto) {
+        @content;
+    }
+}
+
+/* Support only edge */
+@mixin supportsFitAvailable() {
+    @supports (not (height: -webkit-fill-available)) {
+        @content;
+    }
+}

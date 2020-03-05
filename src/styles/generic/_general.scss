@@ -1,0 +1,22 @@
+@import '../tools/mixins';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    transition: 250ms;
+    user-select: none;
+}
+
+.ios {
+    *, *::before, *::after {
+        user-select: initial;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+@include onlyMSEdge() {
+
+}
+

@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
+The owner is Esteban Salazar Zapata for Keyrus.
+
+
 ## Install proyect
 
 For install clone this [repo](https://github.com/Boamorte8/login-keyrus.git)

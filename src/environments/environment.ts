@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  version: 'LOC_20200305_V0.1.0_0_1400',
 };
 
 /*
