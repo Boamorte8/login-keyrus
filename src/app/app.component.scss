@@ -56,12 +56,15 @@
     }
 }
 
-.checkbox {
-    margin-right: .25rem;
-    &-label {
-        color: var(--font-color);
-        margin-bottom: 0;
-        font-size: .875rem;
+.form {
+    &-check {
+        &-input {
+            margin-top: .45rem;
+        }
+        &-label {
+            color: var(--font-color);
+            font-size: .875rem;
+        }
     }
 }
 
